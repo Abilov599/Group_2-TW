@@ -56,22 +56,71 @@ h1 {
   font-family: "DM Serif Display", serif;
 }
 
-p {
-  font-family: "Public Sans", sans-serif;
-}
-
-input {
-  font-family: "Public Sans", sans-serif;
-}
-
+p,
+ul,
+li,
+input,
+button,
 ::placeholder {
   font-family: "Public Sans", sans-serif;
 }
 
-button {
-  font-family: "Public Sans", sans-serif;
+body {
+  background-color: #F2F2F2;
 }
 
-body header, body section {
-  background-color: #F2F2F2;
+body header {
+  margin: 0px 165px;
+}
+
+body header nav .btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 173px;
+  background-color: #ba4270;
+  height: 48px;
+  color: #fbfcfe;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 24px;
+  border: 0px;
+}
+body header nav .btn button:hover {
+  background-color: #da6d97;
+}
+
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+}
+body header nav .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 64.34px;
+}
+body header nav .navbar .navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body header nav .navbar .navbar-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 40px;
+}
+body header nav .navbar .navbar-items ul li {
+  color: #36535b;
+  font-weight: 700;
+  opacity: 70%;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

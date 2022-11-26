@@ -1,20 +1,14 @@
 h1 {
   font-family: "DM Serif Display", serif;
 }
-p {
-  font-family: "Public Sans", sans-serif;
-}
 
-input {
-    font-family: "Public Sans", sans-serif;
-}
-
+p,
+ul,
+li,
+input,
+button,
 ::placeholder {
-    font-family: "Public Sans", sans-serif;
-}
-
-button{
-    font-family: "Public Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 // font-family: "Roboto Mono", monospace;

@@ -1,0 +1,37 @@
+body {
+    header {
+        @extend %box-margin;
+
+        nav {
+            @include flexBox (space-between);
+            margin-top: 40px;
+
+            .navbar {
+                @include flexBox ();
+                column-gap: 64.34px;
+
+                .navbar-items {
+                    @include flexBox ();
+
+                    ul {
+                        @include flexBox;
+                        column-gap: 40px;
+
+                        li {
+                            color: $secondary-blue;
+                            font-weight: 700;
+                            opacity: 70%;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                button {
+                    @extend %button-pink;
+                }
+            }
+        }
+    }
+}
