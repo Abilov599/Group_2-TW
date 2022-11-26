@@ -56,24 +56,39 @@ h1 {
   font-family: "DM Serif Display", serif;
 }
 
-p,
-ul,
-li,
-input,
-button,
+p {
+  font-family: "Public Sans", sans-serif;
+}
+
+ul {
+  font-family: "Public Sans", sans-serif;
+}
+
+li {
+  font-family: "Public Sans", sans-serif;
+}
+
+input {
+  font-family: "Public Sans", sans-serif;
+}
+
 ::placeholder {
   font-family: "Public Sans", sans-serif;
 }
 
+button {
+  font-family: "Public Sans", sans-serif;
+}
+
 body {
-  background-color: #F2F2F2;
+  background-color: #edf3f8;
 }
 
 body header {
   margin: 0px 165px;
 }
 
-body header nav .btn button {
+body header .container .huge-text .mail button, body header nav .btn button, body header nav .navbar .navbar-items ul li nav .btn button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,8 +102,9 @@ body header nav .btn button {
   border-radius: 24px;
   border: 0px;
 }
-body header nav .btn button:hover {
+body header .container .huge-text .mail button:hover, body header nav .btn button:hover, body header nav .navbar .navbar-items ul li nav .btn button:hover {
   background-color: #da6d97;
+  cursor: pointer;
 }
 
 body header nav {
@@ -96,7 +112,7 @@ body header nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-top: 40px;
+  margin: 40px 0px 37px;
 }
 body header nav .navbar {
   display: flex;
@@ -118,9 +134,185 @@ body header nav .navbar .navbar-items ul {
   flex-direction: row;
   column-gap: 40px;
 }
+body header nav .navbar .navbar-items ul :hover {
+  cursor: pointer;
+  opacity: 1;
+}
 body header nav .navbar .navbar-items ul li {
   color: #36535b;
   font-weight: 700;
   opacity: 70%;
   font-size: 15px;
+}
+body header nav .navbar .navbar-items ul li nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 40px 0px 37px;
+}
+body header nav .navbar .navbar-items ul li nav .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 64.34px;
+}
+body header nav .navbar .navbar-items ul li nav .navbar .navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body header nav .navbar .navbar-items ul li nav .navbar .navbar-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 40px;
+}
+body header nav .navbar .navbar-items ul li nav .navbar .navbar-items ul li {
+  color: #36535b;
+  font-weight: 700;
+  opacity: 70%;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+body header nav .navbar .navbar-items ul li nav .navbar .navbar-items ul :hover {
+  cursor: pointer;
+  opacity: 1;
+}
+body header nav .navbar .navbar-items ul li nav .bar {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  body header nav .navbar .navbar-items ul li nav {
+    margin: 40px 24px 0;
+  }
+  body header nav .navbar .navbar-items ul li nav .navbar .navbar-items {
+    display: none;
+  }
+  body header nav .navbar .navbar-items ul li nav .btn {
+    display: none;
+  }
+  body header nav .navbar .navbar-items ul li nav .bar {
+    display: block;
+  }
+}
+body header nav .bar {
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  body header nav {
+    margin: 40px 24px 0;
+  }
+  body header nav .navbar .navbar-items {
+    display: none;
+  }
+  body header nav .btn {
+    display: none;
+  }
+  body header nav .bar {
+    display: block;
+  }
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body header .container .huge-text {
+  width: 546px;
+}
+body header .container .huge-text h1 {
+  font-size: 72px;
+  color: #36535b;
+  font-weight: 400;
+  padding-bottom: 42px;
+}
+body header .container .huge-text .mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 24px;
+  width: 445px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+body header .container .huge-text .mail input {
+  padding-left: 30px;
+  width: 245px;
+  height: 48px;
+  border-radius: 24px;
+  border: 0;
+  font-size: 15px;
+  opacity: 0.5;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+body header .container .huge-text p {
+  padding-top: 16px;
+  margin-left: 30px;
+  color: #36535b;
+  font-size: 15px;
+  color: #6c8294;
+  letter-spacing: 0.3px;
+}
+body header .container .huge-text p a {
+  text-decoration: none;
+  color: #6c8294;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+@media only screen and (max-width: 992px) {
+  body header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-direction: column-reverse;
+    margin: 0 24px;
+    width: 100%;
+  }
+  body header .container .huge-text {
+    width: 100%;
+  }
+  body header .container .huge-text .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 24px;
+  }
+  body header .container .huge-text .mail input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+  }
+  body header .container .huge-text .mail button {
+    width: 100%;
+  }
+  body header .container .huge-text p {
+    padding: 0;
+    margin-left: 32%;
+    padding-right: 30%;
+  }
+}
+
+body #jeyhun {
+  background-color: #1B262F;
+}
+body #jeyhun .partners {
+  margin: 100px 165px;
+}
+body #jeyhun .partners .partners-info h2 {
+  font-size: 48px;
+  line-height: 56px;
 }/*# sourceMappingURL=main.css.map */

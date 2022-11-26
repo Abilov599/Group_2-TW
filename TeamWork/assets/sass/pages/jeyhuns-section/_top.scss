@@ -1,0 +1,14 @@
+body {
+    #jeyhun {
+        background-color: $bg-color-secondary;
+        .partners{
+            margin: 100px 165px;
+            .partners-info {
+                h2 {
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+            }
+        }
+    }
+}
