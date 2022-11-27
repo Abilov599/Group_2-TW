@@ -1,0 +1,58 @@
+body {
+    #jeyhun {
+        background-color: $bg-color-secondary;
+
+        .partners {
+            @include flexBox (space-between);
+            @extend %box-margin;
+            padding: 100px 0;
+
+            .partners-info {
+                width: 445px;
+
+                h2 {
+                    font-size: 48px;
+                    line-height: 56px;
+                    color: $color-primary;
+                }
+
+                p {
+                    line-height: 28px;
+                    font-size: 15px;
+                    color: $color-primary;
+                    opacity: 0.7;
+
+                    padding: 24px 0 32px
+                }
+
+                button {
+                    @extend %button-transparent;
+                }
+            }
+
+            .partners-logo {
+                .row {
+                    @include flexBox(space-between);
+                    padding-bottom: 39px;
+                    column-gap: 60px;
+
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                flex-direction: column-reverse;
+                padding: 85px 0;
+                text-align: center;
+
+                .partners-info {
+                    @include flexBox;
+                    flex-direction: column;
+
+                    button {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
