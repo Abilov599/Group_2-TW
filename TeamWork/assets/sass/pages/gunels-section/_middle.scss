@@ -1,19 +1,5 @@
 #gunel {
   .container {
-<<<<<<< HEAD
-    @include flexBox;
-    flex-direction: column;
-    .section1 {
-      max-width: 90vw;
-      @include flexBox(space-around);
-
-      .image-form {
-        width: 45vw;
-      }
-
-      .easy-to-implement {
-        width: 100%;
-=======
     .section1 {
       max-width: 100vw;
       @include flexBox();
@@ -24,7 +10,6 @@
 
       .easy-to-implement {
         width: 50vw;
->>>>>>> 046b07a131231f99de2dd166842d9ca633ebc68a
         h1 {
           color: $secondary-blue;
           font-family: "DM Serif Display";
@@ -48,11 +33,7 @@
         flex-direction: column;
         text-align: center;
         .image-form {
-<<<<<<< HEAD
-          margin-right: 50px;
-=======
           margin-right: 100px;
->>>>>>> 046b07a131231f99de2dd166842d9ca633ebc68a
         }
 
         .easy-to-implement {
@@ -67,19 +48,12 @@
     }
 
     .section2 {
-<<<<<<< HEAD
-      max-width: 90vw;
-      @include flexBox();
-
-      .simple-ui-ux {
-=======
       max-width: 100vw;
       @include flexBox();
 
       .simple-ui-ux {
         width: 50vw;
         margin-left: 200px;
->>>>>>> 046b07a131231f99de2dd166842d9ca633ebc68a
         h1 {
           color: $secondary-blue;
           font-family: "DM Serif Display";
@@ -101,11 +75,7 @@
       }
 
       .phone-image {
-<<<<<<< HEAD
-        width: 45vw;
-=======
         width: 50vw;
->>>>>>> 046b07a131231f99de2dd166842d9ca633ebc68a
         @include flexBox();
 
         .phone1 {
@@ -118,10 +88,6 @@
       }
 
       @media screen and (max-width: 992px) {
-<<<<<<< HEAD
-        width: 600px;
-=======
->>>>>>> 046b07a131231f99de2dd166842d9ca633ebc68a
         flex-direction: column;
         text-align: center;
         .simple-ui-ux {
