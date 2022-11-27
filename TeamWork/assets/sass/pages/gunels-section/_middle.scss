@@ -1,0 +1,80 @@
+#gunel {
+  .container3 {
+    @extend %box-margin;
+    width: 1015px;
+    @include flexBox();
+    padding-top: 150px;
+    padding-bottom: 10px;
+    padding-right: px;
+
+    .box1 {
+      img {
+        padding-right: 125px;
+      }
+    }
+    .box2 {
+      h1 {
+        width: 445px;
+        font-size: 48px;
+        color: $secondary-blue;
+        font-family: "DM Serif Display";
+        line-height: 56px;
+        letter-spacing: 0.4px;
+        padding-bottom: 24px;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: "Public Sans";
+        color: $secondary-light-blue;
+        line-height: 28px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+
+  .container4 {
+    width: 1200px;
+    @extend %box-margin;
+    @include flexBox();
+
+    .box3 {
+      position: relative;
+      left: 420px;
+
+      h1 {
+        width: 445px;
+        font-size: 48px;
+        color: $secondary-blue;
+        font-family: "DM Serif Display";
+        line-height: 56px;
+        letter-spacing: 0.4px;
+        padding-bottom: 24px;
+      }
+
+      p {
+        width: 445px;
+        font-size: 15px;
+        font-family: "Public Sans";
+        color: $secondary-light-blue;
+        line-height: 28px;
+      }
+    }
+
+    .box4 {
+      @include flexBox();
+      position: relative;
+      left: 450px;
+      z-index: 1;
+
+      .phone1 {
+        position: relative;
+        left: 100px;
+      }
+    }
+    .yarim-cevre {
+      position: relative;
+      left: 128px;
+    }
+  }
+}

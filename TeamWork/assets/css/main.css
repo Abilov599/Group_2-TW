@@ -73,5 +73,83 @@ button {
 }
 
 body header, body section {
-  background-color: #F2F2F2;
+  background-color: #EDF3F8;
+}
+
+#gunel .container4, #gunel .container3 {
+  margin: 0px 165px;
+}
+
+#gunel .container3 {
+  width: 1015px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  padding-right: px;
+}
+#gunel .container3 .box1 img {
+  padding-right: 125px;
+}
+#gunel .container3 .box2 h1 {
+  width: 445px;
+  font-size: 48px;
+  color: #36535b;
+  font-family: "DM Serif Display";
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  padding-bottom: 24px;
+}
+#gunel .container3 .box2 p {
+  font-size: 15px;
+  font-family: "Public Sans";
+  color: #6c8294;
+  line-height: 28px;
+  padding-bottom: 60px;
+}
+#gunel .container4 {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#gunel .container4 .box3 {
+  position: relative;
+  left: 420px;
+}
+#gunel .container4 .box3 h1 {
+  width: 445px;
+  font-size: 48px;
+  color: #36535b;
+  font-family: "DM Serif Display";
+  line-height: 56px;
+  letter-spacing: 0.4px;
+  padding-bottom: 24px;
+}
+#gunel .container4 .box3 p {
+  width: 445px;
+  font-size: 15px;
+  font-family: "Public Sans";
+  color: #6c8294;
+  line-height: 28px;
+}
+#gunel .container4 .box4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  left: 450px;
+  z-index: 1;
+}
+#gunel .container4 .box4 .phone1 {
+  position: relative;
+  left: 100px;
+}
+#gunel .container4 .yarim-cevre {
+  position: relative;
+  left: 128px;
 }/*# sourceMappingURL=main.css.map */
