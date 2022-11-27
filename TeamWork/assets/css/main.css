@@ -116,6 +116,12 @@ body header, body section {
   line-height: 25px;
   letter-spacing: -0.12px;
 }
+@media only screen and (max-width: 992px) {
+  .sunay-cards {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+}
 
 .sunay-main-2 {
   display: flex;
@@ -128,6 +134,11 @@ body header, body section {
   justify-content: space-around;
   margin: 96px 0px 0px 0px;
   padding-bottom: 100px;
+}
+@media only screen and (max-width: 992px) {
+  .sunay-main-2 {
+    flex-direction: column;
+  }
 }
 .sunay-main-2 h1 {
   font-weight: 400px;
@@ -152,6 +163,14 @@ body header, body section {
   background-color: #fbfcfe;
   border: none;
 }
+@media only screen and (max-width: 992px) {
+  .sunay-main-2 .form #mail {
+    position: relative;
+    left: 0px;
+    width: 40%;
+    margin: 32px 0px 16px 0px;
+  }
+}
 .sunay-main-2 .form button {
   z-index: 1;
   width: 100%;
@@ -170,6 +189,13 @@ body header, body section {
 .sunay-main-2 .form button:hover {
   background-color: #da6d97;
 }
+@media only screen and (max-width: 992px) {
+  .sunay-main-2 .form {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
 
 footer {
   display: flex;
@@ -182,14 +208,32 @@ footer {
   height: 100px;
   background-color: #1B262F;
 }
+@media only screen and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    height: 375px;
+  }
+}
 footer .footer-all {
   -moz-column-gap: 560px;
        column-gap: 560px;
   display: flex;
 }
+@media only screen and (max-width: 992px) {
+  footer .footer-all {
+    flex-direction: column;
+  }
+}
 footer .footer-text, footer ul, footer li {
   color: #fbfcfe;
   margin-top: 42px 0px 40px 0px;
+}
+@media only screen and (max-width: 992px) {
+  footer .footer-text, footer ul, footer li {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 40px;
+  }
 }
 footer .footer-text {
   -moz-column-gap: 65px;
@@ -199,6 +243,12 @@ footer .footer-text {
 footer .footer-text-1 {
   display: flex;
   margin-top: 10px;
+}
+@media only screen and (max-width: 992px) {
+  footer .footer-text-1 {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 footer ul {
   display: flex;
@@ -211,6 +261,11 @@ footer .foot-icon {
   -moz-column-gap: 24px;
        column-gap: 24px;
   margin-top: 11px;
+}
+@media only screen and (max-width: 992px) {
+  footer .foot-icon {
+    margin-top: 42px;
+  }
 }
 footer img {
   background-color: #1B262F;
