@@ -76,85 +76,105 @@ body header, body section {
   background-color: #EDF3F8;
 }
 
-#gunel .container4, #gunel .container3 {
-  margin: 0px 165px;
-}
-
-#gunel .container3 {
-  width: 1015px;
+#gunel .container .section1 {
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-top: 150px;
-  padding-bottom: 10px;
-  padding-right: px;
 }
-#gunel .container3 .box1 img {
-  padding-right: 125px;
+#gunel .container .section1 .image-form {
+  width: 50vw;
 }
-#gunel .container3 .box2 h1 {
-  width: 445px;
-  font-size: 48px;
+#gunel .container .section1 .easy-to-implement {
+  width: 50vw;
+}
+#gunel .container .section1 .easy-to-implement h1 {
   color: #36535b;
   font-family: "DM Serif Display";
-  line-height: 56px;
-  letter-spacing: 0.4px;
   padding-bottom: 24px;
+  width: 445px;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.3;
 }
-#gunel .container3 .box2 p {
-  font-size: 15px;
+#gunel .container .section1 .easy-to-implement p {
   font-family: "Public Sans";
   color: #6c8294;
+  width: 445px;
+  font-size: 15px;
   line-height: 28px;
   padding-bottom: 60px;
 }
 @media screen and (max-width: 992px) {
-  #gunel {
+  #gunel .container .section1 {
     flex-direction: column;
+    text-align: center;
+  }
+  #gunel .container .section1 .image-form {
+    margin-right: 100px;
+  }
+  #gunel .container .section1 .easy-to-implement h1 {
+    width: 573px;
+  }
+  #gunel .container .section1 .easy-to-implement p {
+    width: 573px;
   }
 }
-#gunel .container4 {
-  width: 780px;
+#gunel .container .section2 {
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-#gunel .container4 .box3 {
-  position: relative;
-  left: 420px;
+#gunel .container .section2 .simple-ui-ux {
+  width: 50vw;
+  margin-left: 200px;
 }
-#gunel .container4 .box3 h1 {
-  width: 445px;
-  font-size: 48px;
+#gunel .container .section2 .simple-ui-ux h1 {
   color: #36535b;
   font-family: "DM Serif Display";
-  line-height: 56px;
-  letter-spacing: 0.4px;
   padding-bottom: 24px;
-}
-#gunel .container4 .box3 p {
   width: 445px;
-  font-size: 15px;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.3;
+}
+#gunel .container .section2 .simple-ui-ux p {
   font-family: "Public Sans";
   color: #6c8294;
+  width: 445px;
+  font-size: 15px;
   line-height: 28px;
+  padding-bottom: 60px;
 }
-#gunel .container4 .box4 {
+#gunel .container .section2 .phone-image {
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  position: relative;
-  left: 450px;
-  z-index: 1;
 }
-#gunel .container4 .box4 .phone1 {
+#gunel .container .section2 .phone-image .phone1 {
   position: relative;
-  left: 100px;
+  left: 110px;
 }
-#gunel .container4 .yarim-cevre {
+#gunel .container .section2 .phone-image .phone2 {
   position: relative;
-  left: 128px;
+}
+@media screen and (max-width: 992px) {
+  #gunel .container .section2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  #gunel .container .section2 .simple-ui-ux {
+    margin-left: 0;
+  }
+  #gunel .container .section2 .simple-ui-ux h1 {
+    width: 573.5px;
+  }
+  #gunel .container .section2 .simple-ui-ux p {
+    width: 573.5px;
+  }
 }/*# sourceMappingURL=main.css.map */

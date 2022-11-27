@@ -1,84 +1,105 @@
 #gunel {
-  .container3 {
-    @extend %box-margin;
-    width: 1015px;
-    @include flexBox();
-    padding-top: 150px;
-    padding-bottom: 10px;
-    padding-right: px;
-
-    .box1 {
-      img {
-        padding-right: 125px;
-      }
-    }
-    .box2 {
-      h1 {
-        width: 445px;
-        font-size: 48px;
-        color: $secondary-blue;
-        font-family: "DM Serif Display";
-        line-height: 56px;
-        letter-spacing: 0.4px;
-        padding-bottom: 24px;
-      }
-
-      p {
-        font-size: 15px;
-        font-family: "Public Sans";
-        color: $secondary-light-blue;
-        line-height: 28px;
-        padding-bottom: 60px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    flex-direction: column;
-  }
-
-  .container4 {
-    width: 780px;
-    @extend %box-margin;
-    @include flexBox();
-
-    .box3 {
-      position: relative;
-      left: 420px;
-
-      h1 {
-        width: 445px;
-        font-size: 48px;
-        color: $secondary-blue;
-        font-family: "DM Serif Display";
-        line-height: 56px;
-        letter-spacing: 0.4px;
-        padding-bottom: 24px;
-      }
-
-      p {
-        width: 445px;
-        font-size: 15px;
-        font-family: "Public Sans";
-        color: $secondary-light-blue;
-        line-height: 28px;
-      }
-    }
-
-    .box4 {
+  .container {
+    .section1 {
+      max-width: 100vw;
       @include flexBox();
-      position: relative;
-      left: 450px;
-      z-index: 1;
 
-      .phone1 {
-        position: relative;
-        left: 100px;
+      .image-form {
+        width: 50vw;
+      }
+
+      .easy-to-implement {
+        width: 50vw;
+        h1 {
+          color: $secondary-blue;
+          font-family: "DM Serif Display";
+          padding-bottom: 24px;
+          width: 445px;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -0.3;
+        }
+        p {
+          font-family: "Public Sans";
+          color: $secondary-light-blue;
+          width: 445px;
+          font-size: 15px;
+          line-height: 28px;
+          padding-bottom: 60px;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+        .image-form {
+          margin-right: 100px;
+        }
+
+        .easy-to-implement {
+          h1 {
+            width: 573px;
+          }
+          p {
+            width: 573px;
+          }
+        }
       }
     }
-    .yarim-cevre {
-      position: relative;
-      left: 128px;
+
+    .section2 {
+      max-width: 100vw;
+      @include flexBox();
+
+      .simple-ui-ux {
+        width: 50vw;
+        margin-left: 200px;
+        h1 {
+          color: $secondary-blue;
+          font-family: "DM Serif Display";
+          padding-bottom: 24px;
+          width: 445px;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -0.3;
+        }
+
+        p {
+          font-family: "Public Sans";
+          color: $secondary-light-blue;
+          width: 445px;
+          font-size: 15px;
+          line-height: 28px;
+          padding-bottom: 60px;
+        }
+      }
+
+      .phone-image {
+        width: 50vw;
+        @include flexBox();
+
+        .phone1 {
+          position: relative;
+          left: 110px;
+        }
+        .phone2 {
+          position: relative;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+        .simple-ui-ux {
+          margin-left: 0;
+          h1 {
+            width: 573.5px;
+          }
+          p {
+            width: 573.5px;
+          }
+        }
+      }
     }
   }
 }
