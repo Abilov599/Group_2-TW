@@ -253,15 +253,15 @@ body header .container .huge-text .mail input {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-body header .container .huge-text p {
+body header .container .huge-text .contact-us p {
   padding-top: 16px;
-  margin-left: 30px;
+  padding-left: 30px;
   color: #36535b;
   font-size: 15px;
   color: #6c8294;
   letter-spacing: 0.3px;
 }
-body header .container .huge-text p a {
+body header .container .huge-text .contact-us p a {
   text-decoration: none;
   color: #6c8294;
   font-weight: 700;
@@ -299,10 +299,15 @@ body header .container .huge-text p a {
   body header .container .huge-text .mail button {
     width: 100%;
   }
-  body header .container .huge-text p {
+  body header .container .huge-text .contact-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  body header .container .huge-text .contact-us p {
     padding: 0;
-    margin-left: 32%;
-    padding-right: 30%;
   }
 }
 

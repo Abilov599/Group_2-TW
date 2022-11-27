@@ -160,20 +160,22 @@ body {
                     }
                 }
 
-                p {
-                    padding-top: 16px;
-                    margin-left: 30px;
-                    color: $secondary-blue;
-                    font-size: 15px;
-                    color: $secondary-light-blue;
-                    letter-spacing: 0.3px;
-
-                    a {
-                        text-decoration: none;
-                        color: $secondary-light-blue;
-                        font-weight: 700;
+                .contact-us {
+                    p {
+                        padding-top: 16px;
+                        padding-left: 30px;
+                        color: $secondary-blue;
                         font-size: 15px;
-                        letter-spacing: 0.5px;
+                        color: $secondary-light-blue;
+                        letter-spacing: 0.3px;
+
+                        a {
+                            text-decoration: none;
+                            color: $secondary-light-blue;
+                            font-weight: 700;
+                            font-size: 15px;
+                            letter-spacing: 0.5px;
+                        }
                     }
                 }
             }
@@ -205,10 +207,14 @@ body {
                         }
                     }
 
-                    p {
-                        padding: 0;
-                        margin-left: 32%;
-                        padding-right: 30%;
+                    .contact-us {
+
+                        width: 100%;
+                        @include flexBox;
+
+                        p {
+                            padding: 0;
+                        }
                     }
                 }
             }
