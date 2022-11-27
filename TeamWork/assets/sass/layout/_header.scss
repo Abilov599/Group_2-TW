@@ -3,6 +3,7 @@ body {
     header {
         @extend %box-margin;
 
+
         nav {
             @include flexBox (space-between);
             margin: 40px 0px 37px;
@@ -213,11 +214,16 @@ body {
                         @include flexBox;
 
                         p {
-                            padding: 0;
+                            padding: 0 0 79px;
                         }
                     }
                 }
             }
+        }
+
+        @media only screen and (max-width: 992px) {
+            max-width: 600px;
+            margin: 0 auto;
         }
     }
 }

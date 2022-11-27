@@ -84,8 +84,9 @@ body {
   background-color: #edf3f8;
 }
 
-body header {
-  margin: 0px 165px;
+body #jeyhun .partners, body header {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 body header .container .huge-text .mail button, body header nav .btn button, body header nav .navbar .navbar-items ul li nav .btn button {
@@ -101,9 +102,31 @@ body header .container .huge-text .mail button, body header nav .btn button, bod
   font-size: 15px;
   border-radius: 24px;
   border: 0px;
+  letter-spacing: -0.12px;
 }
 body header .container .huge-text .mail button:hover, body header nav .btn button:hover, body header nav .navbar .navbar-items ul li nav .btn button:hover {
   background-color: #da6d97;
+  cursor: pointer;
+}
+
+body #jeyhun .partners .partners-info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 129px;
+  background-color: transparent;
+  height: 48px;
+  color: #fbfcfe;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 24px;
+  border: 1px solid #fbfcfe;
+  letter-spacing: -0.12px;
+}
+body #jeyhun .partners .partners-info button:hover {
+  color: #1b262f;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -307,7 +330,13 @@ body header .container .huge-text .contact-us p a {
     flex-direction: row;
   }
   body header .container .huge-text .contact-us p {
-    padding: 0;
+    padding: 0 0 79px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body header {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -315,9 +344,49 @@ body #jeyhun {
   background-color: #1B262F;
 }
 body #jeyhun .partners {
-  margin: 100px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 100px 0;
+}
+body #jeyhun .partners .partners-info {
+  width: 445px;
 }
 body #jeyhun .partners .partners-info h2 {
   font-size: 48px;
   line-height: 56px;
+  color: #fbfcfe;
+}
+body #jeyhun .partners .partners-info p {
+  line-height: 28px;
+  font-size: 15px;
+  color: #fbfcfe;
+  opacity: 0.7;
+  padding: 24px 0 32px;
+}
+body #jeyhun .partners .partners-logo .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 39px;
+  column-gap: 60px;
+}
+@media only screen and (max-width: 992px) {
+  body #jeyhun .partners {
+    flex-direction: column-reverse;
+    padding: 85px 0;
+    text-align: center;
+  }
+  body #jeyhun .partners .partners-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-direction: column;
+  }
+  body #jeyhun .partners .partners-info button {
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
