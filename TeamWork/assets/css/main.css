@@ -109,8 +109,13 @@ body header, body section {
   line-height: 28px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 992px) {
+  #gunel {
+    flex-direction: column;
+  }
+}
 #gunel .container4 {
-  width: 1200px;
+  width: 780px;
   display: flex;
   justify-content: center;
   align-items: center;
