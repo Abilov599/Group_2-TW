@@ -1,0 +1,160 @@
+.sunay-cards {
+    @include flexBox;
+    // justify-content: center;
+    width: 100%;
+    column-gap: 36px;
+    margin-top: 146.57px;
+
+    .sunaycard-1 {
+        width: 30%;
+        transition: 0.6s;
+
+        &:hover {
+            transform: scale(1.04);
+        }
+
+    }
+
+    .sunay-card {
+        // @include flexBox
+        text-align: center;
+
+    }
+
+    .icon {
+        @include flexBox
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    h5 {
+        font-family: "Public Sans", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.14px;
+        margin: 32px 0px 16px 0px;
+        color: $secondary-blue;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.12px;
+        color: $secondary-light-blue;
+
+    }
+
+    @media only screen and (max-width:992px) {
+        flex-direction: column;
+        row-gap: 48px;
+    }
+}
+
+
+.sunay-main-2 {
+    @include flexBox;
+    width: 100%;
+    column-gap: 220px;
+    justify-content: space-around;
+    margin: 96px 0px 0px 0px;
+    padding-bottom: 100px;
+
+    @media only screen and (max-width:992px) {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-weight: 400px;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.37px;
+        color: $secondary-blue;
+    }
+
+    .form {
+        @include flexBox;
+
+        #mail {
+            position: relative;
+            left: 185px;
+            width: 100%;
+            padding: 16px 235px 14px 27px;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            background-color: $color-primary;
+            border: none;
+
+            @media only screen and (max-width:992px) {
+                position: relative;
+                left: 0px;
+                width: 40%;
+                margin: 32px 0px 16px 0px;
+
+            }
+
+        }
+
+        button {
+
+            z-index: 1;
+            width: 100%;
+            padding: 16px 24.5px 14px 26.5px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 17.63px;
+            letter-spacing: -0.12px;
+            border-radius: 24px;
+            background-color: $dark-pink;
+            color: $color-primary;
+            border: none;
+            cursor: pointer;
+            transition: 1.2s;
+
+            &:hover {
+                background-color: $hover-pink;
+
+            }
+        }
+
+        @media only screen and (max-width:992px) {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+        }
+    }
+
+    // @media only screen and (max-width:992px){
+
+    //     flex-direction: column;
+    //     row-gap: 32px;
+    //     button{
+    //         position: relative;
+    //         top: 59px;
+    //         right: 250px;
+    //         flex-direction: column;
+    //         z-index: 1;
+    //         width: 100%;
+    //         padding: 16px 24.5px 14px 26.5px;
+    //         font-weight: 700;
+    //         font-size: 15px;
+    //         line-height: 17.63px;
+    //         letter-spacing: -0.12px;
+    //         border-radius: 24px;
+    //         background-color: $dark-pink;
+    //         color: $color-primary;
+    //         border: none;
+    //         cursor: pointer;
+    //         transition: 1.2s;
+    //         &:hover{
+    //             background-color: $hover-pink;
+
+    //         }
+    //     }
+    // }
+}

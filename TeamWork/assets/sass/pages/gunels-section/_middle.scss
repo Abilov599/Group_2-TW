@@ -1,0 +1,117 @@
+#gunel {
+  .container {
+    @include flexBox;
+    flex-direction: column;
+
+    .section1 {
+      max-width: 90vw;
+      @include flexBox(space-around);
+
+      .image-form {
+        margin-right: 100px;
+
+      }
+
+      .easy-to-implement {
+        h1 {
+          color: $secondary-blue;
+          font-family: "DM Serif Display";
+          padding-bottom: 24px;
+          width: 445px;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -0.3;
+        }
+
+        p {
+          font-family: "Public Sans";
+          color: $secondary-light-blue;
+          width: 445px;
+          font-size: 15px;
+          line-height: 28px;
+          padding-bottom: 60px;
+        }
+      }
+
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+
+        .image-form {
+          margin-right: 100px;
+        }
+
+        .easy-to-implement {
+          h1 {
+            width: 573px;
+          }
+
+          p {
+            width: 573px;
+          }
+        }
+      }
+    }
+
+    .section2 {
+      max-width: 90vw;
+      @include flexBox();
+
+      .simple-ui-ux {
+        width: 100%;
+        margin-left: 200px;
+
+        h1 {
+          color: $secondary-blue;
+          font-family: "DM Serif Display";
+          padding-bottom: 24px;
+          width: 445px;
+          font-size: 48px;
+          line-height: 56px;
+          letter-spacing: -0.3;
+        }
+
+        p {
+          font-family: "Public Sans";
+          color: $secondary-light-blue;
+          width: 445px;
+          font-size: 15px;
+          line-height: 28px;
+          padding-bottom: 60px;
+        }
+      }
+
+      .phone-image {
+        width: 100%;
+        @include flexBox();
+
+        .phone1 {
+          position: relative;
+          left: 110px;
+        }
+
+        .phone2 {
+          position: relative;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+
+        .simple-ui-ux {
+
+          // margin-left: 0;
+          h1 {
+            width: 573.5px;
+          }
+
+          p {
+            width: 573.5px;
+          }
+        }
+      }
+    }
+  }
+}
