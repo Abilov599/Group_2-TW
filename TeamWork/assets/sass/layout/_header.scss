@@ -1,0 +1,229 @@
+body {
+
+    header {
+        @extend %box-margin;
+
+
+        nav {
+            @include flexBox (space-between);
+            margin: 40px 0px 37px;
+
+            .navbar {
+                @include flexBox ();
+                column-gap: 64.34px;
+
+                .navbar-items {
+                    @include flexBox ();
+
+                    ul {
+                        @include flexBox;
+                        column-gap: 40px;
+
+                        & :hover {
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+
+                        li {
+                            color: $secondary-blue;
+                            font-weight: 700;
+                            opacity: 70%;
+                            font-size: 15px;
+
+                            nav {
+                                @include flexBox (space-between);
+                                margin: 40px 0px 37px;
+
+                                .navbar {
+                                    @include flexBox ();
+                                    column-gap: 64.34px;
+
+                                    .navbar-items {
+                                        @include flexBox ();
+
+                                        ul {
+                                            @include flexBox;
+                                            column-gap: 40px;
+
+                                            li {
+                                                color: $secondary-blue;
+                                                font-weight: 700;
+                                                opacity: 70%;
+                                                font-size: 15px;
+                                                line-height: 18px;
+                                                letter-spacing: 0.5px;
+                                            }
+
+                                            & :hover {
+                                                cursor: pointer;
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .btn {
+                                    button {
+                                        @extend %button-pink;
+                                    }
+                                }
+
+                                .bar {
+                                    display: none;
+                                }
+
+                                @media only screen and (max-width:992px) {
+                                    margin: 40px 24px 0;
+
+                                    .navbar {
+                                        .navbar-items {
+                                            display: none;
+                                        }
+                                    }
+
+                                    .btn {
+                                        display: none;
+                                    }
+
+                                    .bar {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                button {
+                    @extend %button-pink;
+                }
+            }
+
+            .bar {
+                display: none;
+            }
+
+            @media only screen and (max-width:992px) {
+                margin: 40px 24px 0;
+
+                .navbar {
+                    .navbar-items {
+                        display: none;
+                    }
+                }
+
+                .btn {
+                    display: none;
+                }
+
+                .bar {
+                    display: block;
+                }
+            }
+        }
+
+        .container {
+            @include flexBox (space-between);
+
+            .huge-text {
+                width: 546px;
+
+                h1 {
+                    font-size: 72px;
+                    color: $secondary-blue;
+                    font-weight: 400;
+                    padding-bottom: 42px;
+                }
+
+                .mail {
+                    @include flexBox(space-between);
+                    background-color: white;
+                    border-radius: 24px;
+                    width: 445px;
+                    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+                    input {
+                        padding-left: 30px;
+                        width: 245px;
+                        height: 48px;
+                        border-radius: 24px;
+                        border: 0;
+                        font-size: 15px;
+                        opacity: 0.5;
+                        font-weight: 700;
+                        letter-spacing: 0.5px;
+                    }
+
+                    button {
+                        @extend %button-pink;
+                    }
+                }
+
+                .contact-us {
+                    p {
+                        padding-top: 16px;
+                        padding-left: 30px;
+                        color: $secondary-blue;
+                        font-size: 15px;
+                        color: $secondary-light-blue;
+                        letter-spacing: 0.3px;
+
+                        a {
+                            text-decoration: none;
+                            color: $secondary-light-blue;
+                            font-weight: 700;
+                            font-size: 15px;
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width:992px) {
+                @include flexBox;
+                flex-direction: column-reverse;
+                margin: 0 24px;
+                width: 100%;
+
+                .huge-text {
+                    width: 100%;
+
+                    .mail {
+                        @include flexBox;
+                        flex-direction: column;
+                        width: 100%;
+                        background-color: transparent;
+                        margin-bottom: 24px;
+
+                        input {
+                            width: 100%;
+                            box-sizing: border-box;
+                            margin-bottom: 16px;
+                        }
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+
+                    .contact-us {
+
+                        width: 100%;
+                        @include flexBox;
+
+                        p {
+                            padding: 0 0 79px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
